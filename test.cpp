@@ -13,7 +13,7 @@ int main();
 int main()
 {
   EventHandler::AddEventHandler("hi", testing);
-  TriggerEventHandler<testingDef, int>("hi", 1); // find the Event(s) named "hi" pass a value of 1 as in the input for the function.
+  EventHandler::TriggerEventHandler<testingDef, int>("hi", 1); // find the Event(s) named "hi" pass a value of 1 as in the input for the function.
   
   return 0;
 }
