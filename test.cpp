@@ -1,6 +1,5 @@
 #include "EventHandler.h"
 
-int testing(int x);
 int testing(int x)
 {
  std::cout << std::endl << x; // will print 1
@@ -9,7 +8,6 @@ int testing(int x)
 
 typedef int(testingDef)(int); // for our void*
 
-int main();
 int main()
 {
   EventHandler::AddEventHandler("hi", testing);
